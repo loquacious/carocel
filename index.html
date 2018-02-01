@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <title>Papa Guapa</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- My Styles -->
+  <link href="css/main.css" rel="stylesheet">
+
+  <!-- Owl Carousel Styles -->
+  <link href="css/owl.carousel.min.css" rel="stylesheet">
+  <link href="css/owl.theme.default.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="container">
+
+    <header>
+      <h1>Papa Guapa</h1>
+    </header>
+
+    <div class="owl-carousel owl-theme">
+      <div><img src="img/big-shake.jpeg" alt="Flaverful Shakes"></div>
+      <div><img src="img/blue-frie.jpg" alt="New Blue cheese Fries"></div>
+      <div><img src="img/strawberrymilk.png" alt="Dummy image"></div>
+      <div><img src="img/chili-powder.jpg" alt="Dummy image"></div>
+      <div><img src="img/new-shake.jpg" alt="Dummy image"></div>
+      <div><img src="img/sweet-pot.jpg" alt="Dummy image"></div>
+    </div>
+
+    <footer>
+      This image slider is made using <a href="https://owlcarousel2.github.io/OwlCarousel2/">Owl Carousel 2</a>. See the official docs for more options.
+    </footer>
+
+  </div>
+
+  <!-- first load jquery -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+  <!-- owl carousel stuff -->
+  <script src="js/owl.carousel.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('.owl-carousel').owlCarousel({
+          autoplay: true,
+          autoplayTimeout: 3500,
+          dots: true,
+          items: 1,
+          loop: true,
+          margin: 10,
+          nav: false,
+          autoplayHoverPause: true,
+          autoplaySpeed: 1500,
+      })
+    });
+  </script>
+
+</body>
+</html>
